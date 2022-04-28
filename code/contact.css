@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.takeout-content h1, .contact-container-left #bold, .top h1 {
+  font-family: Bebas Neue;
+  font-weight: 400;
+}
+
+.contact-container-form input, .contact-container-form textarea, .contact-container-form p, .contact-container-left p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.contact-container-form-send, .top h3 {
+  font-family: Work Sans;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+* {
+  margin: 0px;
+}
+
+.header-container {
+  background-color: #191919;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  -moz-column-gap: 12.5rem;
+       column-gap: 12.5rem;
+}
+.header-container-logo {
+  padding: 0.6rem 8.9rem;
+  width: 200px;
+}
+.header-container-link {
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+}
+.header-container-link:hover, .header-container-contact {
+  color: #4C903D;
+}
+
+.top {
+  background: linear-gradient(180deg, #030303 15%, rgba(3, 3, 3, 0.4) 100%), url("img/contato3.jpeg");
+  background-size: 100%;
+  width: 100%;
+  height: 441px;
+  display: flex;
+  align-items: flex-end;
+}
+.top-title {
+  padding: 7rem 9rem;
+}
+.top h1 {
+  color: #fff;
+  font-size: 70px;
+  padding-top: 1.5rem;
+  padding-bottom: 0rem;
+}
+.top h3 {
+  color: #fff;
+  padding-top: 1rem;
+}
+
+.contact-container {
+  width: 100%;
+  padding-top: 6rem;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.contact-container-left {
+  margin-left: 8.4rem;
+  width: 75%;
+}
+.contact-container-left-img-photo {
+  max-width: 100%;
+}
+.contact-container-left p {
+  font-size: 19px;
+  margin: 1rem 0;
+}
+.contact-container-left #bold {
+  font-size: 31px;
+  margin: 2rem 0 0 0;
+}
+.contact-container-left ul {
+  padding: 1rem;
+}
+.contact-container-left li {
+  display: list-item;
+  list-style-image: url("img/building.png");
+  -webkit-padding-start: 1ch;
+          padding-inline-start: 1ch;
+}
+.contact-container-left-social {
+  display: grid;
+  grid-template-columns: repeat(2, 3.5rem);
+}
+.contact-container-left-social-link {
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #000;
+  border-radius: 2rem;
+  width: 1rem;
+}
+.contact-container-left-social-link:hover {
+  background-color: #353535;
+}
+.contact-container-left-social img {
+  height: 1em;
+}
+.contact-container-form {
+  padding-left: 0;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  width: 40rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-container-form-name {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.contact-container-form-name-label {
+  display: grid;
+  grid-template-columns: 7rem 1rem;
+}
+.contact-container-form #dot {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+.contact-container-form input, .contact-container-form textarea {
+  background-color: #F2F2F2;
+  border-color: #d2d2d2;
+  border-style: solid;
+  border-radius: 5px;
+  height: 50px;
+  padding-left: 1rem;
+}
+.contact-container-form textarea {
+  height: 6rem;
+}
+.contact-container-form-send {
+  background-color: #FFFFFF;
+  padding: 1rem 2rem;
+  border: #d2d2d2 solid 1px;
+}
+.contact-container-form-send:hover {
+  border-color: #000;
+}
+
+.takeout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  background-color: lightgrey;
+  text-align: center;
+}
+.takeout-img {
+  padding: 0;
+  margin: 0;
+  width: 582px;
+  height: 354px;
+  background-color: lightblue;
+  background-image: url("img/Rio-Brazilian-Steakhouse-13.jpeg");
+  background-size: 100%;
+}
+.takeout-content {
+  padding: 0;
+  margin: 0;
+  padding-left: 5rem;
+  text-align: left;
+  width: 30rem;
+  height: 354px;
+  background-color: #000;
+  overflow: hidden;
+}
+.takeout-content h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+.takeout-content:hover {
+  /*box-shadow: os balores sao, nesta ordem, shadow top, shadow right (para valores positivos).
+  Caso queira colocar shadow na esquerda e bottom, colocar valores negativos. O terceiro valor é
+  para definir o quanto de blur voce quer, e o ultimo valor é para definir o spread*/
+  box-shadow: 1px 1px 10px grey, -1px -1px 10px grey;
+  /*transform transforma o tamanho da imagem como um todo, ou seja, aumenta ou diminui.
+  Por padrao, a imagem ja vem com um valor de 1 no transform*/
+  transform: scale(1.02);
+}/*# sourceMappingURL=contact.css.map */
