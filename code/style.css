@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-indicators{
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    padding: 6px 100px 6px;
+    
+}
+
+
+.block2{
+    background-image: url(https://riobraziliansteakhouse.ca/wp-content/uploads/2020/01/hero192x-scaled.jpg);
+    background-repeat: no-repeat;
+    height: 550px;
+    border: 0.1px solid white;
+
+}
+
+.container_h{
+    height: 91%;
+    display: flex;
+    margin: 25px 255px;
+    justify-content: space-between;
+    
+
+}
+
+.box{
+    width: 350px;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 1em
+}
+
+.block3{
+    background-color: white;
+    background-repeat: no-repeat;
+    height: 830px;
+    border: 0.1px solid white;
+    box-sizing: border-box;
+
+}
+
+.container_h2{
+    display: flex;
+    margin: 50px 100px;
+    height: 91%;
+    justify-content: space-evenly;
+}
+
+.container_h2__box1{
+    width: 580px;
+    height: fit-content;
+}
+
+.container_h2__box2{
+    width: 565px;
+    height: 92%;
+    background-image: url(https://riobraziliansteakhouse.ca/wp-content/uploads/2021/08/Rio-Brazilian-Steakhouse-2.jpg);
+    transition: 0.5s;
+    /*background position faz a imagem de fundo mover-se dentro do espaco que foi limitado
+    desse jeito, podemos focar em outras partes da imagem que queremos. É tipo cortar a parte desejada da imagem*/
+    background-position: right top;
+    background-size: cover;
+    
+}
+
+
+.container_h2__box2:hover{
+    cursor: pointer;
+    /*box-shadow: os balores sao, nesta ordem, shadow top, shadow right (para valores positivos).
+    Caso queira colocar shadow na esquerda e bottom, colocar valores negativos. O terceiro valor é
+    para definir o quanto de blur voce quer, e o ultimo valor é para definir o spread*/
+    box-shadow: 1px 1px 10px grey, -1px -1px 10px grey;
+    /*transform transforma o tamanho da imagem como um todo, ou seja, aumenta ou diminui. 
+    Por padrao, a imagem ja vem com um valor de 1 no transform*/
+    transform: scale(1.02);
+    
+}
+
+.title > h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #030303;
+}
+
+.title{
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.main_phrase{
+    font-family: 'Bebas Neue', cursive;
+    color: black; 
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.paragraph {
+    width: 90%;
+}
+.paragraph > p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 33px;
+    color: #030303;
+}
+
+.carousel-indicators [data-bs-target]{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 6px;
+}
+
+.block5{
+    width: 100%;
+    height: 642px;
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+}
+
+.block5_picture{
+    height: 98%;
+    width: 900px;
+    background-image: url('https://riobraziliansteakhouse.ca/wp-content/uploads/2021/12/picanha-rio-34.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    align-items: flex-start;
+}
+
+.block5_right{
+    height: 100%;
+    width: 600px;
+    padding: 103px 85px;
+}
+
+.textos{
+    width: 100%;
+}
+
+.texto1{
+    height: 60px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #d6d6d6;
+    line-height: 21px;
+    padding-top: 10px;
+    
+}
+
+.texto2{
+    height: 150px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+    line-height: 84px;
+    color: white;
+}
+
+.buttonh{
+    border: 2px solid green;
+    height: 100px;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+.content{
+    display: flex;
+    border: 2px solid yellow;
+}
+
+.traço{
+    color: #d6d6d6;
+    padding-right: 35px;
+}
+
+#button_id{
+    background-color: black;
+    border: 2px solid white;
+    height: 30px;
+}
