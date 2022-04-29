@@ -65,6 +65,8 @@
     /*background position faz a imagem de fundo mover-se dentro do espaco que foi limitado
     desse jeito, podemos focar em outras partes da imagem que queremos. É tipo cortar a parte desejada da imagem*/
     background-position: right top;
+    /*If we use object-fit: cover; the image keeps its aspect ratio and fills the given dimension. 
+    The image will be clipped to fit*/
     background-size: cover;
     
 }
@@ -335,5 +337,44 @@ ion-icon{
     height: 3%;
     width: 100%;
     border: 2px solid red;
-    transform: scaleX(1);
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: stretch;
+    object-fit: cover;
+}
+
+.block4_instagram{
+    width: 100%;
+    height: 1300px;
+    align-items: center;
+}
+
+.grid_container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 220px 220px 220px 220px 220px;
+    grid-template-rows: 220px 220px 220px 220px;
+    margin-left: 150px;
+    margin-top: 150px;
+
+}
+
+.grid_items{
+    text-align: center;
+    width: 220px;
+    height: 220px;
+
+    
+}
+
+.myimg {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.myimg:hover{
+    filter:grayscale()
 }
