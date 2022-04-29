@@ -32,12 +32,12 @@
 .box{
     width: 350px;
     height: 100%;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 1em
 }
 
 .block3{
-    background-color: #f4f4f4;
+    background-color: white;
     background-repeat: no-repeat;
     height: 830px;
     border: 0.1px solid white;
@@ -336,11 +336,16 @@ ion-icon{
 .video_rio{
     height: 3%;
     width: 100%;
-    border: 2px solid red;
     background-color: black;
     position: relative;
     display: flex;
     justify-content: stretch;
+    object-fit: cover;
+}
+
+video{
+    height: 400px;
+    width: 1500px;
     object-fit: cover;
 }
 
