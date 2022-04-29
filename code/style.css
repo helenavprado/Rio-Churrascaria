@@ -307,7 +307,7 @@ h1{
     font-weight: 400;
 }
 
-ion-icon{
+.lilphone_icon{
     color: white;
     font-size: 32px;
     padding-right: 20px;
@@ -353,6 +353,9 @@ video{
     width: 100%;
     height: 1300px;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .grid_container{
@@ -361,7 +364,7 @@ video{
     grid-template-columns: 220px 220px 220px 220px 220px;
     grid-template-rows: 220px 220px 220px 220px;
     margin-left: 150px;
-    margin-top: 150px;
+    margin-bottom: 20px;
 
 }
 
@@ -381,5 +384,51 @@ video{
 }
 
 .myimg:hover{
-    filter:grayscale()
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.user_and_buttom{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin-top: 130px;
+    margin-bottom: 25px;
+    margin-right: 600px;
+    margin-left: 150px;
+}
+
+.instagram_user{
+    height: fit-content;
+    width: fit-content;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.instagram_buttom{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(50, 50, 50);
+    align-content: center;
+    cursor: pointer;
+}
+
+.instagram_icon{
+    color: white;
+    font-size: 25px;
+    margin-left: 12px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.instagram_pair_buttons{
+    margin-left: 580px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 8px;
 }
