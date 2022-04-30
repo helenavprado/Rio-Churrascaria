@@ -13,7 +13,7 @@
   font-size: 19px;
 }
 
-.contact-container-form-send, .top h3 {
+.takeout-content-btn, .takeout-content h3, .contact-container-form-send, .top h3 {
   font-family: Work Sans;
   font-weight: 500;
   font-size: 14px;
@@ -45,9 +45,41 @@
   font-family: Poppins;
   font-weight: 400;
   font-size: 16px;
+  transition: 0.3s;
 }
 .header-container-link:hover, .header-container-contact {
   color: #4C903D;
+}
+
+.socialmedia {
+  position: fixed;
+  bottom: 3rem;
+  right: 5rem;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 0.3rem;
+       column-gap: 0.3rem;
+  transform: translateY(90%);
+  transform: translateX();
+  transition-delay: 2s;
+}
+.socialmedia-facebook {
+  background-image: url("img/facebook-logo-sqare.png");
+  background-size: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.socialmedia-instagram {
+  background-image: url("img/instagram-logo-square.png");
+  background-size: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.socialmedia-youtube {
+  background-image: url("img/youtube-logo-square.png");
+  background-size: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .top {
@@ -154,6 +186,12 @@
 .contact-container-form textarea {
   height: 6rem;
 }
+.contact-container-form input:focus, .contact-container-form textarea:focus {
+  outline: none;
+}
+.contact-container-form input:hover, .contact-container-form textarea:hover {
+  border-color: #e0e0e0;
+}
 .contact-container-form-send {
   background-color: #FFFFFF;
   padding: 1rem 2rem;
@@ -169,15 +207,16 @@
   justify-content: center;
   margin-top: 2rem;
   padding-top: 2rem;
-  background-color: lightgrey;
   text-align: center;
+}
+.takeout a {
+  text-decoration: none;
 }
 .takeout-img {
   padding: 0;
   margin: 0;
   width: 582px;
   height: 354px;
-  background-color: lightblue;
   background-image: url("img/Rio-Brazilian-Steakhouse-13.jpeg");
   background-size: 100%;
 }
@@ -190,16 +229,38 @@
   height: 354px;
   background-color: #000;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2rem;
+  position: relative;
+}
+.takeout-content h3 {
+  color: #D6D6D6;
+  font-size: 14px;
 }
 .takeout-content h1 {
-  font-size: 3rem;
+  font-size: 50px;
   color: #fff;
+}
+.takeout-content-btn {
+  border-color: #fff;
+  border-style: solid;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem 1rem 0rem;
+}
+.takeout-content-btn li {
+  display: list-item;
+  list-style-image: url("img/car.png");
+  -webkit-padding-start: 1ch;
+          padding-inline-start: 1ch;
 }
 .takeout-content:hover {
   /*box-shadow: os balores sao, nesta ordem, shadow top, shadow right (para valores positivos).
   Caso queira colocar shadow na esquerda e bottom, colocar valores negativos. O terceiro valor é
   para definir o quanto de blur voce quer, e o ultimo valor é para definir o spread*/
-  box-shadow: 1px 1px 10px grey, -1px -1px 10px grey;
+  box-shadow: 1px 1px 10px grey;
   /*transform transforma o tamanho da imagem como um todo, ou seja, aumenta ou diminui.
   Por padrao, a imagem ja vem com um valor de 1 no transform*/
   transform: scale(1.02);

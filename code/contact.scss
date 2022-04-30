@@ -49,6 +49,7 @@
         font-family: Poppins;
         font-weight: 400;
         font-size: 16px;
+        transition: 0.3s;
     }
 
     &-link:hover, &-contact {
@@ -58,6 +59,45 @@
     
 }
 
+.socialmedia {
+    // position: absolute;
+    position: fixed;
+    bottom: 3rem;
+    right: 5rem;
+    display:flex;
+    flex-direction:row;
+    column-gap: 0.3rem;
+
+    transform: translateY(90%);
+    transform: translateX();
+    // transition: 1s all ease;
+    transition-delay: 2s;
+
+   
+    &-facebook {
+        // position: fixed;
+        background-image: url("img/facebook-logo-sqare.png");
+        background-size: 100%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    &-instagram {
+        // position: fixed;
+        background-image: url("img/instagram-logo-square.png");
+        background-size: 100%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    &-youtube {
+        // position: fixed;
+        background-image: url("img/youtube-logo-square.png");
+        background-size: 100%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
 /////////////////////
 
 .top {
@@ -186,6 +226,14 @@
             height: 6rem;
         }
 
+        & input:focus, textarea:focus {
+            outline: none;
+        }
+
+        & input:hover, textarea:hover {
+            border-color: #e0e0e0;
+        }
+
         &-send {
             @extend %font-work-sans;
             background-color: #FFFFFF;
@@ -208,15 +256,17 @@
 
     margin-top: 2rem;
     padding-top: 2rem;
-    background-color: lightgrey;
     text-align: center;
+
+    & a {
+        text-decoration: none;
+    }
 
     &-img {
         padding: 0;
         margin: 0;
         width: 582px;
         height: 354px;
-        background-color: lightblue;
         background-image: url("img/Rio-Brazilian-Steakhouse-13.jpeg");
         background-size: 100%;
     }
@@ -230,12 +280,38 @@
         height: 354px;
         background-color: #000;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2rem;
+        position: relative;
         
+        & h3 {
+            @extend %font-work-sans;
+            color: #D6D6D6;
+            font-size: 14px;
+        }
 
         & h1 {
             @extend %font-bebas-neue;
-            font-size: 3rem;
+            font-size: 50px;
             color: #fff;
+        }
+
+        &-btn {
+            border-color: #fff;
+            border-style: solid;
+            background-color: #000;
+            color: #fff;
+            @extend %font-work-sans;
+            padding: 1rem 2rem 1rem 0rem;
+
+            & li {
+                display: list-item;
+                list-style-image: url("img/car.png");
+                padding-inline-start: 1ch;
+            }
+            
         }
     }
 
@@ -245,9 +321,10 @@
         /*box-shadow: os balores sao, nesta ordem, shadow top, shadow right (para valores positivos).
         Caso queira colocar shadow na esquerda e bottom, colocar valores negativos. O terceiro valor é
         para definir o quanto de blur voce quer, e o ultimo valor é para definir o spread*/
-        box-shadow: 1px 1px 10px grey, -1px -1px 10px grey;
+        box-shadow: 1px 1px 10px grey; //, -1px -1px 10px grey;
         /*transform transforma o tamanho da imagem como um todo, ou seja, aumenta ou diminui.
         Por padrao, a imagem ja vem com um valor de 1 no transform*/
         transform: scale(1.02);
     }
 }
+
