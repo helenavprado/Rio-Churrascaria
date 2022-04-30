@@ -14,10 +14,11 @@
 
 .block2{
     background-image: url(https://riobraziliansteakhouse.ca/wp-content/uploads/2020/01/hero192x-scaled.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 550px;
     border: 0.1px solid white;
-
+    background-position: center center;
 }
 
 .container_h{
@@ -33,7 +34,8 @@
     width: 350px;
     height: 100%;
     background-color: white;
-    border-radius: 1em
+    border-radius: 1em;
+    overflow: scroll;
 }
 
 .block3{
@@ -431,4 +433,91 @@ video{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 8px;
+}
+
+.box_container_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.touch_bistro_logo{
+    margin-top: 15px;
+    margin-right: 60px;
+}
+
+.line_style{
+    color: #d6d6d6;
+}
+
+.restaurant_name{
+    font-weight: 600;
+    font-size: 34px;
+    text-align: center;
+    color: #5f6161;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 25px;
+    line-height: 1.2631578947;
+}
+
+.restaurant_address{
+    text-align: center;
+    color: #5f6161;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 13px;
+    padding: 20px 25px 10px;
+}
+
+.container_reservation{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.container_1{
+    display: flex;
+    margin-top: 5px;
+}
+
+.box2_icon{
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.icon_reso{
+    font-size: 18px;
+    text-align: left;
+}
+
+.text_reso{
+    font-size: 12px;
+    color: #757575;
+}
+
+.number_reso{
+    padding-top: 5px;
+    color: #333;
+    font-size: .8888888889rem;
+    line-height: 1.5;
+}
+
+.reservation_button{
+    height: 56px;
+    padding: 16px;
+    background-color: #06556e;
+    border-radius: 4px;
+    width: 300px;
+    color: white;
+    font-size: .7222222222rem;
+    border: none;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+.reservation_button:hover{
+background-color:rgb(74, 130, 138);
 }
