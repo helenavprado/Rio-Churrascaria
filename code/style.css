@@ -26,7 +26,7 @@
     display: flex;
     margin: 25px 255px;
     justify-content: space-between;
-    
+
 
 }
 
@@ -465,8 +465,9 @@ video{
     color: #5f6161;
     font-weight: 300;
     line-height: 1.5;
-    font-size: 13px;
+    font-size: 14px;
     padding: 20px 25px 10px;
+    margin-bottom: 50px;
 }
 
 .container_reservation{
@@ -505,7 +506,7 @@ video{
     line-height: 1.5;
 }
 
-.reservation_button{
+.other_button{
     height: 56px;
     padding: 16px;
     background-color: #06556e;
@@ -518,6 +519,6 @@ video{
     margin-bottom: 40px;
 }
 
-.reservation_button:hover{
+.other_button:hover{
 background-color:rgb(74, 130, 138);
 }
