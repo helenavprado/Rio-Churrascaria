@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.footer-developed p, .footer-container-middle, .footer-container-right {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 19px;
+}
+
 * {
   margin: 0px;
+  padding: 0px;
 }
 
 html {
@@ -79,4 +86,50 @@ html {
   color: #fff;
   text-decoration: none;
   font-size: 18pt;
+}
+
+.footer {
+  background-color: #191919;
+  bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.footer-container {
+  background-image: url("img/rodape-rio-34.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3rem 8rem 3rem 8rem;
+}
+.footer-container-left img {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #2C2829;
+}
+.footer-container-left-social {
+  padding: 1rem;
+}
+.footer-container-left-social a, .footer-container-left-social :visited, .footer-container-left-social hover {
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 15pt;
+}
+.footer-container-middle, .footer-container-right {
+  color: #fff;
+}
+.footer-container-middle h3, .footer-container-right h3 {
+  font-size: 18px;
+  padding: 1rem 0;
+}
+.footer-container-middle p, .footer-container-right p {
+  font-size: 14px;
+  padding: 0.5rem 1.5rem;
+}
+.footer-developed p {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #000;
 }/*# sourceMappingURL=menu.css.map */
