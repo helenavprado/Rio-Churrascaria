@@ -1,0 +1,134 @@
+%font-bebas-neue {
+    font-family: Bebas Neue;
+    font-weight: 400;
+}
+
+%font-poppins {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+%font-work-sans {
+    font-family: Work Sans;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.top {
+    background: linear-gradient(180deg, #030303 15%,rgba(3,3,3,0.4) 100%), url("img/contato3.jpeg");
+    background-size: 100%;
+    width: 100%;
+    height: 441px;
+    display: flex;
+    align-items: flex-end;
+
+    &-title {
+        padding: 7rem 9rem;
+    }
+
+    h1 {
+        color: #fff;
+        @extend %font-bebas-neue;
+        font-size: 70px;
+        padding-top: 1.5rem;
+        padding-bottom: 0rem;
+    }
+
+    h3 {
+        @extend %font-work-sans;
+        color: #fff;
+        padding-top: 1rem;
+    }
+}
+
+
+
+.content {
+
+    & h1 {
+        @extend %font-bebas-neue;
+        font-size: 45px;
+        padding: 2rem 0 2rem 0;
+    }
+    & h2 {
+        @extend %font-bebas-neue;
+        font-size: 31px;
+        padding: 1rem 0 1rem 0;
+    }
+    & h3 {
+        @extend %font-work-sans;
+        font-size: 16px;
+        text-align: center;
+    }
+    & p {
+        @extend %font-poppins;
+        font-size: 19px;
+        line-height: 1.9;
+        text-align: justify;
+    }
+
+    &-item {
+        display: grid;
+        grid-template-columns: 90% 10%;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 6rem;
+        padding: 1rem;
+        &-left {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            margin-top: 4rem;
+            margin-bottom: 0;
+            background-color: #E8E8E8;
+        }
+        &-middle {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            margin-bottom: 0;
+            background-color: #DBDBDB;
+            & h2 {
+                font-size: 25px;
+                padding: 0.5rem 0 0.5rem 0;
+            }
+        }
+
+        &-right {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0;
+            margin: 0;
+            background-image: linear-gradient(180deg, #030303 27%,rgba(3,3,3,0.2) 100%),url("img/misc22x.jpeg");
+            background-position:center center;
+            background-repeat:no-repeat;
+            background-size: 100%;
+            padding-bottom: 0;
+            color: #fff;
+
+            & h1 {
+                padding-bottom: 0;
+                font-size: 35px;
+            }
+            & h2 {
+                font-size: 25px;
+                padding: 0.5rem 0 0.5rem 0;
+            }
+            & h4 {
+                @extend %font-bebas-neue;
+                font-size: 18px;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+
+}
