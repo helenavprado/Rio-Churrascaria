@@ -17,10 +17,10 @@ html {
   align-items: center;
   -moz-column-gap: 12.5rem;
        column-gap: 12.5rem;
+  height: 100px;
 }
 .header-container-logo {
   padding: 0.6rem 8.9rem;
-  width: 200px;
 }
 .header-container-link {
   padding-left: 1.5rem;
@@ -32,7 +32,7 @@ html {
   font-size: 16px;
   transition: 0.3s;
 }
-.header-container-link:hover, .header-container-contact {
+.header-container-link:hover, .header-container-highlight {
   color: #4C903D;
 }
 

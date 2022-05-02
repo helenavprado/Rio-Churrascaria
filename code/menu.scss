@@ -36,10 +36,11 @@ html {
     grid-template-columns: 1fr 2fr;
     align-items: center;
     column-gap: 12.5rem;
+    height: 100px;
     &-logo {
         padding: 0.6rem 8.9rem;
-        width: 200px;
     }
+
 
     &-links {
         // margin: auto;
@@ -56,7 +57,7 @@ html {
         transition: 0.3s;
     }
 
-    &-link:hover, &-contact {
+    &-link:hover, &-highlight {
         color: #4C903D;
     }
 
