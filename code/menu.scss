@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+%font-bebas-neue {
+    font-family: Bebas Neue;
+    font-weight: 400;
+}
+
+%font-poppins {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+%font-work-sans {
+    font-family: Work Sans;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+* {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+//////////////
+.header-container {
+    background-color: #191919;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    column-gap: 12.5rem;
+    &-logo {
+        padding: 0.6rem 8.9rem;
+        width: 200px;
+    }
+
+    &-links {
+        // margin: auto;
+    }
+
+    &-link {
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+        text-decoration: none;
+        color: #fff;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    &-link:hover, &-contact {
+        color: #4C903D;
+    }
+
+    
+}
+
+.socialmedia {
+    position: fixed;
+    bottom: 3rem;
+    right: 5rem;
+    display:flex;
+    flex-direction:row;
+    column-gap: 0.3rem;
+
+    &-facebook {
+        // position: fixed;
+        background-image: url("img/facebook-logo-sqare.png");
+        background-size: 100%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    &-instagram {
+        // position: fixed;
+        background-image: url("img/instagram-logo-square.png");
+        background-size: 100%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    &-youtube {
+        // position: fixed;
+        background-image: url("img/youtube-logo-square.png");
+        background-size: 100%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+.to-top {
+    position: fixed;
+    bottom: 0;
+    right: 5rem;
+    display:flex;
+    flex-direction:row;
+    column-gap: 0.3rem;
+    background-color: #2E2E2E;
+    padding: 0.5rem 0.8rem 0 0.8rem;
+
+    & a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18pt;
+    }
+
+
+}
+/////////////////////

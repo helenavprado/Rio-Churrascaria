@@ -43,126 +43,51 @@
     }
 }
 
-.contact-container {
-     width: 100%;
-    padding-top: 6rem;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 40% 60%;
-
-    &-left {
-        margin-left: 8.4rem;
-         width: 75%;
-        &-img-photo {
-            max-width: 100%;
-        }
-
-        & p {
-            font-size: 19px;
-            @extend %font-poppins;
-            margin: 1rem 0;
-        }
-
-        & #bold {
-            @extend %font-bebas-neue;
-            font-size: 31px;
-            margin: 2rem 0 0 0;
-        }
-
-        & ul {
-            padding: 1rem;
-        }
-        
-        & li {
-            display: list-item;
-            list-style-image: url("img/building.png");
-            padding-inline-start: 1ch;
-        }
-
-        &-social {
+.content {
+    &-container {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 6rem 8rem;
+        column-gap: 3rem;
+        &-left {
             display: grid;
-            grid-template-columns: repeat(2, 3.5rem);
-
-            &-link {
-                padding: 1rem 1rem 1rem 1rem;
-                background-color: #000;
-                border-radius: 50%;
-                width: 1rem;
+            grid-template-rows: 89% 1rem;
+            margin: 0;
+            &-image {
+                background-image: url("img/about-rio.jpeg");
+                background-size: 100%;
+                height: auto;
+                height: 100%;
+                background-repeat: no-repeat;
+                padding-bottom: 0;
             }
 
-            &-link:hover {
-                background-color: #353535;
+            &-image:hover {
+                box-shadow: 1px 1px 10px grey; //, -1px -1px 10px grey;
+                transform: scale(1.02);
+                transition-timing-function: ease;
+            }
+        }
+        &-text {
+            padding: 1rem 9rem 0 5rem;
+            & p {
+                @extend %font-poppins;
+                text-align: justify;
+                padding-bottom: 2rem;
             }
 
-            & img {
-                height: 1em;
+            & h3 {
+                @extend %font-bebas-neue;
+                font-size: 40px;
+                text-align: justify;
+                padding-bottom: 2rem;
             }
+
         }
     }
 
-    &-form {
-        padding-left: 0;
-        margin-top: 1rem;
-        margin-left: 3rem;
-        width: 40rem;
-        // height: 60rem;
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        &-name {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 1rem;
-            &-label {
-                display: grid;
-                grid-template-columns: 7rem 1rem;
-            }
-        }
-
-        & p {
-            @extend %font-poppins;
-        }
-
-        & #dot {
-            text-decoration: underline dotted;
-        }
-
-        & input, textarea {
-            background-color: #F2F2F2;
-            border-color: #d2d2d2;
-            border-style:solid;
-            border-radius: 5px;
-            @extend %font-poppins;
-            height: 50px;
-            padding-left: 1rem;
-        }
-
-        & textarea {
-            height: 6rem;
-        }
-
-        & input:focus, textarea:focus {
-            outline: none;
-        }
-
-        & input:hover, textarea:hover {
-            border-color: #e0e0e0;
-        }
-
-        &-send {
-            @extend %font-work-sans;
-            background-color: #FFFFFF;
-            padding: 1rem 2rem;
-            border: #d2d2d2 solid 1px ;
-           
-        }
-
-        &-send:hover {
-            border-color: #000;
-        }
-    }
 }
+
 
 .takeout {
     display: flex;
