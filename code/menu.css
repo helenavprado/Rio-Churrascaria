@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-.footer-developed p, .footer-container-middle, .footer-container-right {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 19px;
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -88,48 +82,65 @@ html {
   font-size: 18pt;
 }
 
-.footer {
-  background-color: #191919;
-  bottom: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-.footer-container {
-  background-image: url("img/rodape-rio-34.jpeg");
+.botton {
+  background: linear-gradient(180deg, #030303 15%, rgba(3, 3, 3, 0.4) 100%), url("img/contato3.jpeg");
   background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 3rem 8rem 3rem 8rem;
+  width: 100%;
+  height: 241px;
 }
-.footer-container-left img {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #2C2829;
-}
-.footer-container-left-social {
-  padding: 1rem;
-}
-.footer-container-left-social a, .footer-container-left-social :visited, .footer-container-left-social hover {
-  padding: 0.5rem;
+
+.locations {
+  display: flex;
+  justify-content: space-around;
   color: #fff;
-  font-size: 15pt;
+  align-items: center;
 }
-.footer-container-middle, .footer-container-right {
-  color: #fff;
+
+.container-logo-bottom {
+  padding-left: 40px;
+  padding-top: 50px;
 }
-.footer-container-middle h3, .footer-container-right h3 {
-  font-size: 18px;
-  padding: 1rem 0;
+
+.social-media {
+  border-top: #fff 0.5px solid;
+  padding-left: 60px;
 }
-.footer-container-middle p, .footer-container-right p {
-  font-size: 14px;
-  padding: 0.5rem 1.5rem;
+
+.fa {
+  padding-top: 10px;
+  font-size: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  color: white;
 }
-.footer-developed p {
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  padding: 0.5rem;
-  background-color: #000;
+
+.locations-vancouver {
+  font-family: Poppins;
+  padding-top: 50px;
+  width: 20%;
+  align-items: center;
+  font-size: 15px;
+}
+
+.locations-coquitlam {
+  font-family: Poppins;
+  padding-top: 50px;
+  width: 20%;
+  align-items: center;
+  font-size: 15px;
+}
+
+.fa-map-marker {
+  padding-right: 20px;
+  font-size: 25px;
+}
+
+.fa-phone {
+  padding-right: 20px;
+  font-size: 25px;
+}
+
+.locations-container {
+  padding-top: 15px;
+  display: flex;
 }/*# sourceMappingURL=menu.css.map */

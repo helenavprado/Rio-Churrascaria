@@ -113,66 +113,120 @@ html {
 }
 /////////////////////
 
-.footer {
-    background-color: #191919;
-    bottom: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
+// .footer {
+//     background-color: #191919;
+//     bottom: 0;
+//     padding-bottom: 0;
+//     margin-bottom: 0;
 
-    &-container {
-        background-image: url("img/rodape-rio-34.jpeg");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
+//     &-container {
+//         background-image: url("img/rodape-rio-34.jpeg");
+//         background-size: 100%;
+//         background-repeat: no-repeat;
+//         background-position: center;
 
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 3rem 8rem 3rem 8rem;
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//         padding: 3rem 8rem 3rem 8rem;
 
-        &-left {
-            & img {
-                padding-bottom: 1rem;
-                border-bottom: 1px solid #2C2829;
-            }
+//         &-left {
+//             & img {
+//                 padding-bottom: 1rem;
+//                 border-bottom: 1px solid #2C2829;
+//             }
 
-            &-social {
-                padding: 1rem;
-                & a, :visited, hover {
-                    padding: 0.5rem;
-                    color: #fff;
-                    font-size: 15pt;
-                }
+//             &-social {
+//                 padding: 1rem;
+//                 & a, :visited, hover {
+//                     padding: 0.5rem;
+//                     color: #fff;
+//                     font-size: 15pt;
+//                 }
 
-            }
-        }
+//             }
+//         }
 
-        &-middle, &-right {
-            @extend %font-poppins;
-            color: #fff;
+//         &-middle, &-right {
+//             @extend %font-poppins;
+//             color: #fff;
 
-            & h3 {
-                 font-size: 18px;
-                 padding: 1rem 0;
+//             & h3 {
+//                  font-size: 18px;
+//                  padding: 1rem 0;
                  
-             }
+//              }
 
-             & p {
-                 font-size: 14px;
-                 padding: 0.5rem 1.5rem;
-             }
+//              & p {
+//                  font-size: 14px;
+//                  padding: 0.5rem 1.5rem;
+//              }
            
 
             
-        }
-    }
+//         }
+//     }
 
-    &-developed p {
-        color: #fff;
-        @extend %font-poppins;
-        font-size: 12px;
-        text-align: center;
-        padding: 0.5rem;
+//     &-developed p {
+//         color: #fff;
+//         @extend %font-poppins;
+//         font-size: 12px;
+//         text-align: center;
+//         padding: 0.5rem;
 
-        background-color: #000;
-    }
+//         background-color: #000;
+//     }
+// }
+
+.botton{
+    background: linear-gradient(180deg, #030303 15%,rgba(3,3,3,0.4) 100%), url("img/contato3.jpeg");
+    background-size: 100%;
+    width: 100%;
+    height: 241px;
+}
+.locations{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    align-items: center;
+}
+.container-logo-bottom{
+    padding-left: 40px;
+    padding-top: 50px;
+}
+.social-media{
+    border-top: #fff 0.5px solid;
+    padding-left: 60px;
+}
+  .fa {
+    padding-top: 10px;
+    font-size: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  .locations-vancouver{
+    font-family: Poppins;
+    padding-top: 50px;
+    width: 20%;
+    align-items: center;
+    font-size: 15px;
+}
+.locations-coquitlam{
+    font-family: Poppins;
+    padding-top: 50px;
+    width: 20%;
+    align-items: center;
+    font-size: 15px;
+}
+.fa-map-marker{
+    padding-right: 20px;
+    font-size: 25px;
+}
+.fa-phone{
+    padding-right: 20px;
+    font-size: 25px;
+}
+.locations-container{
+    padding-top: 15px;
+    display: flex ;
 }
