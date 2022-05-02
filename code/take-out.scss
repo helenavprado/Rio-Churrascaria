@@ -31,7 +31,7 @@
     h1 {
         color: #fff;
         @extend %font-bebas-neue;
-        font-size: 70px;
+        font-size: 75px;
         padding-top: 1.5rem;
         padding-bottom: 0rem;
     }
@@ -47,28 +47,6 @@
 
 .content {
 
-    & h1 {
-        @extend %font-bebas-neue;
-        font-size: 45px;
-        padding: 2rem 0 2rem 0;
-    }
-    & h2 {
-        @extend %font-bebas-neue;
-        font-size: 31px;
-        padding: 1rem 0 1rem 0;
-    }
-    & h3 {
-        @extend %font-work-sans;
-        font-size: 16px;
-        text-align: center;
-    }
-    & p {
-        @extend %font-poppins;
-        font-size: 19px;
-        line-height: 1.9;
-        text-align: justify;
-    }
-
     &-item {
         display: grid;
         grid-template-columns: 90% 10%;
@@ -81,6 +59,29 @@
         grid-template-columns: repeat(3, 1fr);
         margin: 6rem;
         padding: 1rem;
+
+        & h1 {
+            @extend %font-bebas-neue;
+            font-size: 45px;
+            padding: 2rem 0 2rem 0;
+        }
+        & h2 {
+            @extend %font-bebas-neue;
+            font-size: 31px;
+            padding: 1rem 0 1rem 0;
+        }
+        & h3 {
+            @extend %font-work-sans;
+            font-size: 16px;
+            text-align: center;
+        }
+        & p {
+            @extend %font-poppins;
+            font-size: 19px;
+            line-height: 1.9;
+            text-align: justify;
+        }
+
         &-left {
             padding: 3rem;
             display: flex;
